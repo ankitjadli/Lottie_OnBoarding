@@ -42,20 +42,28 @@ public class MainActivity extends AppCompatActivity {
                 .with(lottieAnimationView)
                 .withSteps(
                         new SpritzStep.Builder()
-                                .withAutoPlayDuration(1, TimeUnit.SECONDS)
-                                .withSwipeDuration(500, TimeUnit.MILLISECONDS)
+                                .withAutoPlayDuration(0, TimeUnit.SECONDS)
+                                .withSwipeDuration(0, TimeUnit.MILLISECONDS)
                                 .build(),
                         new SpritzStep.Builder()
-                                .withAutoPlayDuration(1, TimeUnit.SECONDS)
-                                .withSwipeDuration(500, TimeUnit.MILLISECONDS)
+                                .withAutoPlayDuration(1000, TimeUnit.MILLISECONDS)
+                                .withSwipeDuration(0, TimeUnit.MILLISECONDS)
                                 .build(),
                         new SpritzStep.Builder()
-                                .withAutoPlayDuration(1, TimeUnit.SECONDS)
+                                .withAutoPlayDuration(1000, TimeUnit.MILLISECONDS)
+                                .withSwipeDuration(0, TimeUnit.MILLISECONDS)
+                                .build(),
+                        new SpritzStep.Builder()
+                                .withAutoPlayDuration(1000, TimeUnit.MILLISECONDS)
+                                .withSwipeDuration(0, TimeUnit.MILLISECONDS)
+                                .build(),
+                        new SpritzStep.Builder()
+                                .withAutoPlayDuration(1000, TimeUnit.MILLISECONDS)
                                 .build()
                 )
                 .build();
 
-        Button continueButton = findViewById(R.id.btn_continue);
+      /*  Button continueButton = findViewById(R.id.btn_continue);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(prevItem);
                 }
             }
-        });
+        });*/
 
     }
 
